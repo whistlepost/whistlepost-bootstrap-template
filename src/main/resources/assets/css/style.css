@@ -1,0 +1,90 @@
+.wp-article {
+    padding:20px;
+    font-family: 'Noto Serif', serif !important;
+}
+
+.wp-article img {
+    width: 100%;
+    height: auto;
+    max-width:500px;
+    margin-bottom: 15px;
+}
+
+.wp-article.feature-article h1 {
+    font-size: 2em;
+}
+
+.wp-article.feature-article img {
+    /*max-width:600px;*/
+    max-width: 100%;
+    width: 100%;
+}
+
+.wp-article .sidebar {
+    height: auto;
+    max-width:400px;
+    margin: 20px 0 20px 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+    background: #d5d5d5;
+    font-size: 0.9em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        /*padding-left: 0 !important;*/
+        font-size: 1.2em;
+    }
+
+    .wp-article img {
+        float: right;
+        width: 50%;
+        height: auto;
+        max-width:500px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .wp-article .sidebar {
+        clear: right;
+        float: right;
+        width: 48%;
+    }
+
+    aside#sidebar-ads {
+        max-width: 18vw;
+    }
+
+    section#banner-ads {
+        max-height: 10vh;
+    }
+}
+
+.article-link {
+    position:relative;
+    height: 100%;
+}
+
+.article-link:hover {
+    background-color: #efefef;
+}
+
+.article-link span.link {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8,
+     make sure you have an empty gif */
+  /*background-image: url('empty.gif');*/
+}
