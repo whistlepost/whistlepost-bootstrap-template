@@ -1,0 +1,7 @@
+Sling-Initial-Content: SLING-INF/content;path:=/apps/wp-bootstrap;overwrite:=true
+Sling-Bundle-Resources: /assets/wp-bootstrap;path:=/assets
+Automatic-Module-Name: org.whistlepost.theme.bootstrap
+Bundle-Name: Whistlepost Template - Boostrap
+Bundle-SymbolicName: org.whistlepost.theme-bootstrap
+Bundle-Category: whistlepost
+Bundle-Version: ${project.version}
