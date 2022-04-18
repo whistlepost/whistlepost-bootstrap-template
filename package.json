@@ -1,0 +1,23 @@
+{
+  "name": "whistlepost-bootstrap-template",
+  "version": "1.0.0",
+  "description": "Template web resources using the Bootstrap framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whistlepost/whistlepost-bootstrap-template.git"
+  },
+  "author": "Ben Fortuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whistlepost/whistlepost-bootstrap-template/issues"
+  },
+  "homepage": "https://github.com/whistlepost/whistlepost-bootstrap-template#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}
