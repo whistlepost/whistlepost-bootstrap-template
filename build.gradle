@@ -2,7 +2,20 @@ plugins {
     id 'java'
     id 'pl.allegro.tech.build.axion-release' version '1.13.3'
     id 'biz.aQute.bnd.builder' version "$bndVersion"
+    id "com.github.node-gradle.node" version "3.1.0"
 }
 
 group = 'org.whistlepost'
 version = scmVersion.version
+
+node {
+    download = true
+}
+
+task buildWebpack(type: NpmTask) {
+    args = ['run', 'buildWebpack']
+}
+
+buildWebpack.dependsOn yarn
+clean.dependsOn yarn_cache_clean
+build.dependsOn buildWebpack
